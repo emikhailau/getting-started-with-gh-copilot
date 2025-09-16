@@ -46,17 +46,5 @@
     </footer>
 
     <script src="app.js"></script>
-    <script>
-        // Fetch activities from the API and render them using the reusable function from app.js
-        (async function() {
-            const res = await fetch("/activities");
-            const activities = await res.json();
-            if (window.renderActivities) {
-                window.renderActivities(activities);
-            } else {
-                console.error("renderActivities function is not available.");
-            }
-        })();
-    </script>
   </body>
 </html>

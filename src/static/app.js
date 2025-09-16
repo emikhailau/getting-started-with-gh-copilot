@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const partSection = document.createElement("div");
         partSection.className = "participants-section";
         const partTitle = document.createElement("p");
-        partTitle.innerHTML = `<strong>Participants:</strong>`;
+        partTitle.textContent = "Participants:";
+        partTitle.className = "participants-title";
         partSection.appendChild(partTitle);
 
         if (details.participants && details.participants.length > 0) {
